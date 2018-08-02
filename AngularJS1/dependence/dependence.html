@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>依赖注入</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="../libs/angular/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp" ng-controller="myController">
+        <h1 ng-repeat="n in [] | range: 10">{{$index + 1}}</h1>
+ 
+        <script type="text/javascript">
+            var CommonApp = angular.module('CommonApp', []);
+
+            CommonApp.filter('range', function(){
+                return function(_array, _n){
+                    for(var i = 0; i < _n; i++){
+                        _array.push(i);
+                    }
+                    return _array;
+                }
+            })            
+
+            //依赖注入 common.js 定义的模块 CommonApp
+            //如果有多个模块可以在数组中以字符串数组的方式注入多个模块名称
+            //依赖注入的是模块名称，而不是变量名：var app = angular.module('模块名称', [])
+            //依赖注入成功后便可以调用 CommonApp 定义的所有过滤器、服务、指令等
+            var app = angular.module('myApp', ['CommonApp']);
+
+            app.controller('myController', ['$scope', '$http',function($scope, $http){
+            }])
+        </script>
+    </body>
+</html>

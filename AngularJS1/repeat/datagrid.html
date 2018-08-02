@@ -1,0 +1,25 @@
+<div>
+    <div class="form-group">
+        <div class="col-sm-3"><label>username：<input type="text" ng-model="username"></label></div>
+        <div class="col-sm-3"><label>phone：<input type="text" ng-model="phone"></label></div>
+        <div class="col-sm-3"><label>mail：<input type="text" ng-model="mail"></label></div>
+        <div class="col-sm-3"><input type="button" class="btn btn-info" value="搜索" ng-click="search"></div>
+    </div>        
+    <div class="bs-example" data-example-id="simple-table" >
+        <table class="table table-bordered dk-datagrid">
+            <thead>
+                <tr>
+                    <th>行号</th>
+                    <!--v-for="(value, key) in dataset[0]"-->
+                    <th ng-repeat="(key, value) in dataset[0]" ng-bind="commonDictionary && commonDictionary[key] && commonDictionary[key][lan] ? commonDictionary[key][lan] : key" ng-if="cols.length < 1 || cols.indexOf(key) > -1"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="obj in dataset | filter: myFilter">
+                    <td ng-bind="$index + 1"></td>
+                    <td ng-repeat="(key, value) in obj"  ng-if="cols.length < 1 || cols.indexOf(key) > -1" ng-bind="key == 'sex' ? (value == 1 ? '男' : '女') : value"></td>
+                </tr>
+            </tbody>
+        </table>             
+    </div>
+</div>

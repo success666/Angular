@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./datagrid.css">
+
+        <script type="text/javascript" src="../libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./common.js"></script>                
+    </head>
+    <body ng-app="studentApp2" ng-controller="studentController2">
+        <datagrid api="student/FetchAllStudent" columns="indexid,account,phone,mail" dictionary="studentDictionary2.txt"></datagrid>
+
+        <script type="text/javascript">
+            var app = angular.module('studentApp2', ['commonApp']);
+
+            app.controller('studentController2', ['$scope', '$http', function($scope, $http){
+                console.log(1, $scope)
+            }])
+        </script>
+    </body>
+</html>
