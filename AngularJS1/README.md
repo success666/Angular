@@ -4,9 +4,9 @@
 # 技术目录
 - 作用域和表达式
 - [控制器](https://github.com/success666/Angular/tree/master/AngularJS1/controller)
-- [指令](https://github.com/dk-lan/angularjs-course/tree/master/AngularJS1/directive)
-- [过滤器](https://github.com/dk-lan/angularjs-course/tree/master/AngularJS1/filter)
-- [依赖注入](https://github.com/dk-lan/angularjs-course/tree/master/AngularJS1/dependence)
+- [指令](https://github.com/success666/Angular/tree/master/AngularJS1/directive)
+- [过滤器](https://github.com/success666/Angular/tree/master/AngularJS1/filter)
+- [依赖注入](https://github.com/success666/Angular/tree/master/AngularJS1/dependence)
 - 服务
 - 自定义指令
 - 路由
