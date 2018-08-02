@@ -5,11 +5,11 @@ Angular 的版本大致可分为两个版本，1.x 的版本 和 2.x 的版本�
 Angular 没有 3.0 的原因是为了和路由统一版本号。
 
 ## 教程目录
-- [搭建环境](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/Environment)
-- [模版语法](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/TemplateSyntax)
-- [组件](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/Component)
-- [指令](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/Directive)
-- [HTTP 服务](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/HTTP)
-- [管道](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/Pipes)
-- [依赖注入](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/DependencyInjection)
-- [路由](https://github.com/dk-lan/angularjs-course/tree/master/Angular4/Router)
+- [搭建环境](https://github.com/success666/Angular/tree/master/Angular4/Environment)
+- [模版语法](https://github.com/success666/Angular/tree/master/Angular4/TemplateSyntax)
+- [组件](https://github.com/success666/Angular/tree/master/Angular4/Component)
+- [指令](https://github.com/success666/Angular/tree/master/Angular4/Directive)
+- [HTTP 服务](https://github.com/success666/Angular/tree/master/Angular4/HTTP)
+- [管道](https://github.com/success666/Angular/tree/master/Angular4/Pipes)
+- [依赖注入](https://github.com/success666/Angular/tree/master/Angular4/DependencyInjection)
+- [路由](https://github.com/success666/Angular/tree/master/Angular4/Router)
